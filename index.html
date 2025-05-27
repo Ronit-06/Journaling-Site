@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Journal App</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div class="container">
+    <h2>Journal</h2>
+
+    <form id="journalForm">
+      <input type="text" id="title" placeholder="Title" required /><br />
+      <textarea id="jentry" name="jentry" rows="4" cols="50" required></textarea><br />
+      <input type="date" id="dentry" name="date" required /><br />
+      <button type="submit">Add Entry</button><br />
+    </form>
+
+    <div>
+      <h2 id="pent">Past Entries:</h2>
+      <ul id="pastEntries"></ul>
+    </div>
+
+    <script src="index.js"></script>
+    </div>
+  </body>
+</html>
